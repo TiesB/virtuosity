@@ -32,11 +32,12 @@ body {
 }
 .site-wrapper-inner {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .cover-container {
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
 }
 
 /*
@@ -46,25 +47,11 @@ body {
 .cover {
     padding: 0 20px;
     color: #fff;
-}
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-    /* Handle the widths */
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-}
-
-@media (min-width: 992px) {
-    .cover-container {
-        width: 100%;
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        font-size: 50px;
     }
 }
