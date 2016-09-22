@@ -1,0 +1,70 @@
+//@import "variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+/*
+ * Globals
+ */
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background: #78000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #960000, #780000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #960000, #780000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #960000, #780000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #960000, #780000); /* Standard syntax */
+}
+body {
+    text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 20px;
+    color: #fff;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .cover-container {
+        width: 100%;
+    }
+}
