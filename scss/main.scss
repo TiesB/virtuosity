@@ -1,5 +1,6 @@
 //@import "variables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 
 /*
@@ -40,18 +41,101 @@ body {
     width: 100%;
 }
 
+.footer {
+    position: relative;
+    top: 300px;
+}
+
+#arrow-down {
+    cursor: pointer;
+    color: #fff;
+    font-size: 3em;
+}
+
+#info {
+    background-color: #b5b5b5;
+}
 /*
  * Cover
  */
 
 .cover {
-    padding: 0 20px;
     color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2 {
+    opacity: 0;
+}
+
+@media (min-width: 1080px) {
+    #logo {
+        width: 1000px;
+    }
 
     h1 {
+        font-size: 4em;
         position: absolute;
-        top: 40%;
-        left: 30%;
-        font-size: 50px;
+        left: 50%;
+        top: 50%;
+        margin-left: -360px;
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 4em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -360px;
+        margin-top: 220px;
+    }
+}
+
+@media (max-width: 1079px) and (min-width: 500px) {
+    #logo {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 2em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -180px;
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 2em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -180px;
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 499px) {
+    #logo {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        position: absolute;
+        left: 50%;
+        margin-left: -107px;
+        top: 50%;
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -107px;
+        margin-top: 70px;
     }
 }

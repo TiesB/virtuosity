@@ -12470,6 +12470,15 @@ $(document).ready(function() {
                                     logoOff();
                                     setTimeout(function() {
                                         logoOn();
+                                        setTimeout(function() {
+                                            $("#symposium").animate({
+                                                opacity: 1
+                                            }, 1000, function() {
+                                                $("#date").animate({
+                                                    opacity: 1
+                                                }, 1000);
+                                            });
+                                        },1000);
                                     },500);
                                 },200);
                             },1000);
@@ -12478,7 +12487,14 @@ $(document).ready(function() {
                 },200);
             },1000);
         },100);
-    }, 3000);
+    }, 2000);
+
+    $("#arrow-down").click(function() {
+        console.log('niks');
+        $('html, body').animate({
+            scrollTop: $("#info").offset().top
+        }, 1000);
+    });
 });
 
 function logoOn() {
