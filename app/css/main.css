@@ -6,6 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import "https://fonts.googleapis.com/css?family=Quicksand";
+@import "https://fonts.googleapis.com/css?family=Maven+Pro";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5828,7 +5829,7 @@ body {
   /* Standard syntax */ }
 
 body {
-  text-align: center; }
+  font-family: 'Maven Pro', sans-serif; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -5845,19 +5846,30 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .footer {
-  position: relative;
-  top: 300px; }
+  position: absolute;
+  left: 50%;
+  bottom: 10px; }
 
-#arrow-down {
+.arrow {
   cursor: pointer;
   color: #fff;
   font-size: 3em; }
 
+#arrow-up {
+  display: none; }
+
+.row {
+  margin: 0;
+  margin-top: 100px; }
+
 #info {
-  background-color: #b5b5b5; }
+  background-color: #e5e5e5; }
+  #info a {
+    color: #780000; }
 
 /*
  * Cover
@@ -5866,14 +5878,14 @@ body {
   color: #fff;
   font-family: 'Quicksand', sans-serif; }
 
-h1, h2 {
+h1.animated, h2.animated {
   opacity: 0; }
 
 @media (min-width: 1080px) {
   #logo {
     width: 1000px; }
 
-  h1 {
+  h1.animated {
     font-size: 4em;
     position: absolute;
     left: 50%;
@@ -5881,7 +5893,7 @@ h1, h2 {
     margin-left: -360px;
     margin-top: 0px; }
 
-  h2 {
+  h2.animated {
     font-size: 4em;
     position: absolute;
     left: 50%;
@@ -5892,7 +5904,7 @@ h1, h2 {
   #logo {
     width: 500px; }
 
-  h1 {
+  h1.animated {
     font-size: 2em;
     position: absolute;
     left: 50%;
@@ -5900,7 +5912,7 @@ h1, h2 {
     margin-left: -180px;
     margin-top: 0px; }
 
-  h2 {
+  h2.animated {
     font-size: 2em;
     position: absolute;
     left: 50%;
@@ -5911,7 +5923,7 @@ h1, h2 {
   #logo {
     width: 300px; }
 
-  h1 {
+  h1.animated {
     font-size: 1.2em;
     position: absolute;
     left: 50%;
@@ -5919,7 +5931,7 @@ h1, h2 {
     top: 50%;
     margin-top: 0px; }
 
-  h2 {
+  h2.animated {
     font-size: 1.2em;
     position: absolute;
     left: 50%;

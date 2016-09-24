@@ -23,7 +23,15 @@ $(document).ready(function() {
                                             }, 1000, function() {
                                                 $("#date").animate({
                                                     opacity: 1
-                                                }, 1000);
+                                                }, 1000, function() {
+                                                    setTimeout(function() {
+                                                        $('html, body').animate({
+                                                            scrollTop: $("#info").offset().top-100
+                                                        }, 1000);
+                                                        $("#arrow-down").hide();
+                                                        $("#arrow-up").show();
+                                                    },1000);
+                                                });
                                             });
                                         },1000);
                                     },500);
@@ -34,13 +42,22 @@ $(document).ready(function() {
                 },200);
             },1000);
         },100);
-    }, 2000);
+    }, 1000);
 
     $("#arrow-down").click(function() {
-        console.log('niks');
         $('html, body').animate({
-            scrollTop: $("#info").offset().top
+            scrollTop: $("#info").offset().top-100
         }, 1000);
+        $(this).hide();
+        $("#arrow-up").show();
+    });
+
+    $("#arrow-up").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1000);
+        $(this).hide();
+        $("#arrow-down").show();
     });
 });
 
