@@ -23,6 +23,7 @@ body {
 }
 body {
     font-family: 'Maven Pro', sans-serif;
+    font-size: 1.3em;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -69,6 +70,20 @@ body {
 
     a {
         color: #780000;
+    }
+
+    div.cva {
+        display: block;
+        margin-top: 40px;
+        font-size: 1.4em;
+        img {
+            float: left;
+            max-width: 150px;
+            margin-right: 10px;
+        }
+        div.clear {
+            clear: both;
+        }
     }
 }
 /*

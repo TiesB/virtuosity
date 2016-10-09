@@ -5829,7 +5829,8 @@ body {
   /* Standard syntax */ }
 
 body {
-  font-family: 'Maven Pro', sans-serif; }
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.3em; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -5870,6 +5871,16 @@ body {
   background-color: #e5e5e5; }
   #info a {
     color: #780000; }
+  #info div.cva {
+    display: block;
+    margin-top: 40px;
+    font-size: 1.4em; }
+    #info div.cva img {
+      float: left;
+      max-width: 150px;
+      margin-right: 10px; }
+    #info div.cva div.clear {
+      clear: both; }
 
 /*
  * Cover
